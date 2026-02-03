@@ -26,38 +26,45 @@
 3. Параметризированные тесты с использованием декоратора
 
 ![image]()
-![image]()
 
 ## Локальный запуск тестов (из терминала)
 1. Скачать проект
 2. Перейти через терминал в директорию проекта
-2. Выполнить команду:
+3. Выполнить команду:
 
-Создаём виртуальное окружение внутри папки проекта.
-Далее команды для MacOS (для windows инуструкция [есть вот тут](https://realpython.com/python-virtual-environments-a-primer/#create-it))
+Создаём виртуальное окружение внутри папки проекта. Далее команды для windows. 
 
 ``` markdown
-python3 -m venv venv
+python -m venv env   # возможно не python, а python3
 ```
+Активируем окружение (возможны два варианта) 
+
+Первый. Выполнение powershell-скрипта 
 
 ``` markdown
-source venv/bin/activate
+.\env\Scripts\Activate.ps1
+```
+Второй. Переключиться в терминал cmd и выполнить команду
+
+``` markdown
+.\env\Scripts\activate
 ```
 
 4. Устанавливаем библиотеки
 
 ``` markdown
-python3 -m pip install requests
+pip install requests
 ```
 
 ``` markdown
-python3 -m pip install pytest
+pip install pytest
 ```
 
 5. Запускаем
 ``` markdown
-pytest tests/test_pokemon.py
+pytest tests/api/test_pokemon.py
 ```
-
 Ожидаемый результат: получим отчет о прохождении тестов.
+
+![image]()
 
