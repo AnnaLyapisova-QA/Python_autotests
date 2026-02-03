@@ -25,7 +25,7 @@
 2. Используется библиотека Requests
 3. Параметризированные тесты с использованием декоратора
 
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/Python_autotests/refs/heads/main/1.png)
 
 ## Локальный запуск тестов (из терминала)
 1. Скачать проект
@@ -66,5 +66,5 @@ pytest tests/api/test_pokemon.py
 ```
 Ожидаемый результат: получим отчет о прохождении тестов.
 
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/Python_autotests/refs/heads/main/3.png)
 
