@@ -2,7 +2,7 @@
 import requests
 
 URL = 'https://api.pokemonbattle.ru/v2'
-TOKEN = 'ad9cd1291ad684d21d1dec2302de7905'
+TOKEN = 'USER_TOKEN'
 HEADER = {'Content-Type': 'application/json', 'trainer_token': TOKEN}
 
 # Шаг 1. Создание покемона
@@ -39,4 +39,5 @@ body_add_pokeboll = {
 }
 
 respons_add_pokeboll = requests.post(url=f'{URL}/trainers/add_pokeball', headers=HEADER, json=body_add_pokeboll)
+
 print(respons_add_pokeboll.text)
